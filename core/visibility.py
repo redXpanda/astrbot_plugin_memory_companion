@@ -18,7 +18,7 @@ def _platform_family(value: str | None) -> str:
     platform = _clean_id(value).casefold()
     if platform in {"", "unknown", "default"}:
         return ""
-    if platform in {"qq", "qqbot", "aiocqhttp", "onebot", "napcat", "go-cqhttp"}:
+    if platform in {"qq", "qqbot", "aiocqhttp", "astrbot_onebot", "onebot", "napcat", "go-cqhttp"}:
         return "qq"
     return platform
 
